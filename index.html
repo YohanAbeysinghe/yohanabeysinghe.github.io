@@ -1,206 +1,315 @@
 <!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Yohan Abeysinghe</title>
-
-    <meta name="author" content="Yohan Abeysinghe">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Yohan Abeysinghe</title>
+  
+  <meta name="author" content="Yohan Abeysinghe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <style>
+    /* Global Typography */
+    body {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+    }
     
-  </head>
+    /* Headings Spacing */
+    h2 { 
+        margin-bottom: 10px; 
+        margin-top: 40px; 
+        font-weight: 600; 
+    }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Yohan Abeysinghe
-                </p>
-                <p>
-		I'm a principal research scientist at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
-		At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>, and <a href="https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/">Shopping</a>.
-		I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>.
-		I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:abeysingheyohan@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="newimages/Yohan.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="newimages/Yohan.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    /* Research section structure */
+    .research-table { width:100%; border:0; border-spacing:0; border-collapse:separate; margin-right:auto; margin-left:auto; }
+    .research-row td { padding:10px 20px; vertical-align:middle; width:100%; position:relative; padding-left:32px; }
+    .entry-title { font-weight:600; }
+    .entry-authors, .entry-venue, .entry-links { display:block; margin-top:4px; }
+    .entry-links a { margin-right:8px; }
+    .me { color:#6b46c1; font-weight:bold; }
+    
+    /* Add small bullet before each research entry */
+    .research-row td::before { content: "\2022"; position:absolute; left:20px; top:14px; color:#666; font-size:12px; }
 
-<!-- <tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='radmesh_image'>
-        <img src='images/radmesh_after.jpg' width=100%>
-      </div>
-      <img src='images/radmesh_before.jpg' width=100%>
-    </div>
-    <script type="text/javascript">
-      function radmesh_start() {
-        document.getElementById('radmesh_image').style.opacity = "1";
-      }
+    /* Logo Styling for Consistency */
+    .logo-cell {
+        padding: 20px;
+        width: 25%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .logo-img {
+        border-style: none;
+        max-height: 100px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-cell {
+        padding: 20px;
+        width: 75%;
+        vertical-align: middle;
+    }
+  </style>
+</head>
 
-      function radmesh_stop() {
-        document.getElementById('radmesh_image').style.opacity = "0";
-      }
-      radmesh_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://half-potato.gitlab.io/rm/">
-      <span class="papertitle">Radiance Meshes for Volumetric Reconstruction</span>
-    </a>
-    <br>
-    <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
-    <a href="https://github.com/Shmaug">Trevor Hedstrom</a>,
-    <a href="https://grgkopanas.github.io/">George Kopanas</a>, <br>
-	<a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>, 
-    <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-    <strong>Jonathan T. Barron</strong>
-    <br>
-    <em>arXiv</em>, 2025
-    <br>
-    <a href="https://half-potato.gitlab.io/rm/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/2512.04076">arXiv</a>
-    <p></p>
-    <p>
-	Parameterizing a scene with a Delaunay tetrahedralization and a neural field yields a scene representation that is accurate, fast to render, easy to edit, and backwards-compatible.
-    </p>
-  </td>
-</tr> -->
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Yohan Abeysinghe</name>
+              </p>
+              <p>
+                I am a first year PhD student in Electrical and Computer Engineering at the <a href="https://ece.umd.edu/">University of Maryland</a>. My research philosophy is defined by a <strong>"proof-over-heuristic"</strong> mindset. While modern deep learning thrives on empirical scaling, I am interested in the <strong>theoretical foundations</strong> of AI—specifically using optimization theory and high-dimensional geometry to explain <i>why</i> models generalize.
+              </p>
+              <p>
+                Previously, I was a Research Associate at <a href="https://mbzuai.ac.ae/">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</a>, working with <a href="https://salman-h-khan.github.io/">Dr. Salman Khan</a> and <a href="https://www.weizmann.ac.il/EPS/People/Rudich/">Prof. Yinon Rudich</a>. I received my B.Sc. (First Class Honours) from the <a href="https://uom.lk/">University of Moratuwa</a>. I am also a former <strong>International Mathematical Olympiad (IMO)</strong> and <strong>International Physics Olympiad (IPhO)</strong> medalist.
+              </p>
+              <p>
+                I am currently focused on bridging the gap between physics-based constraints and data-driven learning, specifically investigating:
+              </p>
+              <ul>
+                <li>The theoretical foundations of VLM explainability and interpretability</li>
+                <li>Algorithmic frameworks for multi-agent coordination and reasoning</li>
+                <li>Stochastic sampling for modeling uncertainty in physical systems</li>
+                <li>The mathematical limits of neural operators and high-dimensional optimization</li>
+              </ul>
+              <p style="text-align:center">
+                <a href="mailto:yohanabe@umd.edu">Email</a> &nbsp/&nbsp
+                <a href="data/Yohan_Abeysinghe_CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.ch/citations?hl=en&user=A-zjeYgAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/YohanAbeysinghe">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/yohan_headshot.jpeg">
+                <div style="width:100%;overflow:hidden;max-width:75%;margin:auto;border-radius:8px;height:250px;display:flex;align-items:center;justify-content:center;">
+                  <img style="width:100%;max-width:100%;object-fit:cover;object-position:center top;" alt="profile photo" src="images/yohan_headshot.jpeg" class="hoverZoomLink">
+                </div>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
 
 
-          </tbody></table>
 
-          
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+
+
+
+        <h2>Research</h2>
+
+        <table class="research-table"><tbody>
+          <tr class="research-row" onmouseout="font_stop()" onmouseover="font_start()">
+            <td>
+              <papertitle class="entry-title">SynCast: Synergistic Neural Forecasting of Air Pollution with Stochastic Sampling</papertitle>
+              <br>
+              <span class="me">Yohan Abeysinghe</span>, Muhammad Akhtar Munir, Sanoojan Baliah, Fahad Shahbaz Khan, Yinon Rudich, Salman Khan
+              <br>
+              <em>Nature NPJ Air (Under Review)</em>
+              <br>
+              <span class="entry-links">
+                <a href="https://arxiv.org/pdf/2510.23977">Paper</a>
+              </span>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table class="research-table"><tbody>
+          <tr class="research-row" onmouseout="font_stop()" onmouseover="font_start()">
+            <td>
+              <papertitle class="entry-title">VFace: A Training-Free Approach for Diffusion-Based Video Face Swapping</papertitle>
+              <br>
+              Sanoojan Baliah, <span class="me">Yohan Abeysinghe</span>, Rusiru Thushara, Khan Muhammad, Abhinav Dhall, Karthik Nandakumar, Muhammad Haris Khan
+              <br>
+              <em>WACV 2026</em>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table class="research-table"><tbody>
+          <tr class="research-row" onmouseout="font_stop()" onmouseover="font_start()">
+            <td>
+              <papertitle class="entry-title">MAGNET: A Multi-agent Framework for Finding Audio-Visual Needles by Reasoning over Multi-Video Haystacks</papertitle>
+              <br>
+              Sanjoy Chowdhury, Mohamed Elmoghany, <span class="me">Yohan Abeysinghe</span>, Junjie Fei, Sayan Nag, Salman Khan, Mohamed Elhoseiny, Dinesh Manocha
+              <br>
+              <em>NeurIPS 2025</em>
+              <br>
+              <span class="entry-links">
+                <a href="https://www.arxiv.org/pdf/2506.07016">Paper</a>
+                <a href="https://schowdhury671.github.io/magnet_project/">Project Page</a>
+              </span>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+        
+
+
+
+    <h2>Selected Honors</h2>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-								 <h2>Micropapers</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
+            <td style="padding:0px 20px;width:100%;vertical-align:middle">
+                <ul style="margin-top:5px;">
+                    <li><strong>Bronze Medal</strong>, International Mathematical Olympiad (IMO), Brazil, 2017</li>
+                    <li><strong>Honourable Mention</strong>, International Mathematical Olympiad (IMO), 2014, 2015, 2016</li>
+                    <li><strong>Honourable Mention</strong>, Asian Physics Olympiad (APhO), Australia, 2019</li>
+                    <li><strong>Bronze Medal</strong>, Asia Pacific Mathematics Olympiad (APMO), 2018</li>
+                    <li><strong>World Rank 163</strong>, IEEEXtreme 15.0 Programming Competition, 2023</li>
+                    <li><strong>Honourable Mention</strong>, International Mathematics Competition for University Students (IMC), 2022</li>
+                    <li><strong>Gold Medal</strong>, Sri Lankan Physics Olympiad, 2019</li>
+                </ul>
+            </td>
+          </tr></tbody></table>
 
 
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Recorded Talks</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
-                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
-                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
-</a><br>
-                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
-				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
-				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
-              </td>
-            </tr>
 
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
+
+
+
+
+    <h2>Experience</h2>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td class="logo-cell">
+              <img src="images/mbzuai.png" alt="MBZUAI" class="logo-img">
+            </td>
+            <td class="content-cell">
+               <papertitle>Mohamed Bin Zayed University of Artificial Intelligence, Abu Dhabi</papertitle>
+              <br>
+              Research Assistant
+              <br>
+              July 2024 - July 2025
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td class="logo-cell">
+              <img src="images/USYD.png" alt="USYD" class="logo-img">
+            </td>
+            <td class="content-cell">
+               <papertitle>School of Computer Science, University of Sydney, Australia</papertitle>
+              <br>
+              Visiting Student Researcher
+              <br>
+              January 2023 - September 2023
+              <br>
+              Supervisor: <a href="https://scholar.google.com/citations?user=y17ckyIAAAAJ&hl=en">Dr. Anusha Withana</a>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+      
+
+    <h2>Education</h2>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr onmouseout="font_stop()" onmouseover="font_start()">
+              <td class="logo-cell">
+                <img src="images/UMD-Emblem.png" alt="UMD" class="logo-img">
               </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
+              <td class="content-cell">
+                <papertitle>University of Maryland</papertitle>
                 <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
+                Ph.D. in Electrical and Computer Engineering
                 <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+                August 2025 - Present
               </td>
             </tr>
-						
-						
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr onmouseout="font_stop()" onmouseover="font_start()">
+              <td class="logo-cell">
+                <img src="images/UOM.png" alt="UOM" class="logo-img">
               </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+              <td class="content-cell">
+                <papertitle>University of Moratuwa</papertitle>
                 <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                B.Sc. (Hons) in Electronics and Telecommunication Engineering
                 <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-                </p>
+                Jan 2020 – July 2024
               </td>
             </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+          </tbody>
+        </table>
+
+
+
+
+
+
+
+    <h2>Teaching</h2>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td class="logo-cell">
+              <img src="images/UMD-Emblem.png" alt="UMD" class="logo-img">
+            </td>
+            <td class="content-cell">
+               <papertitle>Teaching Assistant</papertitle>
+               <br>
+               Department of Electrical and Computer Engineering, University of Maryland
+               <br>
+               ENEE324: Engineering Probability - Fall 2025
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td class="logo-cell">
+              <img src="images/SLMOF-Logo.svg" alt="SLMOF" class="logo-img">
+            </td>
+            <td class="content-cell">
+               <papertitle>Trainer</papertitle>
+              <br>
+              Sri Lanka Mathematics Olympiad Foundation (SLMOF)
+              <br>
+              Training the Sri Lankan national team for the International Mathematical Olympiad (IMO)
+              <br>
+              2023
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <td style="padding:0px">
+        <br>
+        <p style="text-align:center;font-size:small;">
+          Template from <a href="https://jonbarron.info/">Jon Barron</a>.
+        </p>
+      </td>
+    </tr>
+  </tbody></table>
+</body>
+
 </html>

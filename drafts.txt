@@ -1,0 +1,103 @@
+I am a Research Assistant in Mohammad Bin Zayed University of Artificial Intelligence (MBZUAI) in the United Arab Emirates advised by Dr. Salman H Khan of MBZUAI and Dr. Sadeep Jayasumana of Google Research. My current research is on vision-language models for long-tail visual recognition.
+
+I did my undergraduate studies at University of Moratuwa, Sri Lanka, where I completed my bachelors thesis on Learning representations for 3D pointclouds and semantic manipulation of 3D pointcloud objects. The thesis was advised by Dr. Ranga Rodrigo and Dr. Kanchana Thilakarathna.
+
+Previously, I interned as a visiting student researcher at the School of Computer Science, University of Sydney, Australia.
+
+My broader research interests are in vision-language models, multimodal learning, and self-supervised learning.
+
+
+News
+October 2022 Presented our research at Learning to Generate 3D objects and Scenes ECCV2022 workshop
+July 2022 I started working as a RA in MBZUAI
+March 2022 One paper accepted to CVPR2022
+September 2021 Presented at NOSSDAV 2021 at ACM MMSys
+June 2021 Joined VeracityAI as Associate Machine Learning Engineer
+October 2020 Joined School of Computer Science - USYD as visiting student researcher
+
+
+Research
+
+3DLatNav: Navigating generative latent spaces for semantic aware 3D object manipulation
+Amaya Dharmasiri, Dinithi Dissanayake, Isuru Dissanayake, Mohamed Afham, Ranga Rodrigo, and Kanchana Thilakarathna
+Learning to Generate 3D Objects and Scenes - ECCV 2022 Workshop
+paper / code
+Developed a point cloud autoencoder architecture to apply controllable transformations to 3D objects via latent space manipulations while preserving perceptual quality of 3D objects and their intended utility in Mixed Reality applications.
+
+CrossPoint: Self-Supervised Cross-Modal Contrastive Learning for 3D Point Cloud Understanding
+Mohamed Afham, Isuru Dissanayake, Dinithi Dissanayake, Amaya Dharmasiri, Kanchana Thilakarathna, and Ranga Rodrigo.
+CVPR 2022
+paper / code
+Introduced a joint learning objective encapsulating intra-modal correspondence within point cloud modality and cross-modal correspondence between point cloud and 2D image modalities, leveraging contrastive learning.
+Produced state-of-the-art performance in downstream tasks; 3D object classification, few-shot object classification and 3D object part segmentation.
+
+User configurable 3D object regeneration for spatial privacy
+Arpit Nama, Amaya Dharmasiri, Kanchana Thilakarathna, Albert Y. Zomaya, Jaybie Agullo de Guzman
+Preprint - Arxiv
+Proposed a privacy-preserving encoding for 3D point cloud objects with a continuous privilege spectrum for user-controllability of object privacy in mixed-reality applications.
+Evaluated the performance of the encoding against simulated object reidentification attacks using state-of-the-art point cloud classifiers.
+
+Viewport-aware dynamic 360-degree video segment categorization
+Amaya Dharmasiri, Chamara Kattadige, Vincent Zhang, and Kanchana Thilakarathna.
+NOSSDAV at ACM MMSys 2021
+paper / code
+Developed a dynamic categorisation framework for 360-degree video segments based on user viewport trends.
+This categorization is intended to support efficient caching and resource utilisation in tile-based 360 degree video streaming process.
+
+
+Teaching
+
+Visiting lecturer -  Open Course "Embedded Machine Learning for Edge Computing
+Department of Electronic and Telecommunication Engineering, University of Moratuwa, Sri Lanka
+Lectures - Introduction to Machine Learning
+
+
+
+Experience
+
+VeracityAI, Colombo, Sri Lanka
+Associate Machine Learning Engineer
+June 2021 - Feb 2022
+
+School of Computer Science, University of Sydney, Australia
+Visiting student researcher
+Oct 2020 - Apr 2021
+Supervisor: Dr Kanchana Thilakarathna
+
+
+
+Education
+
+University of Moratuwa
+Bachelor's in Science (Engineering) specialized in Electronics and Telecommunications
+Aug 2017 - Jul 2022
+
+
+
+Links
+https://mbzuai.ac.ae/
+https://salman-h-khan.github.io/
+https://research.google/people/106837/ - sadeep
+https://uom.lk/
+https://ranga.staff.uom.lk/
+https://scholar.google.com/citations?user=V-YM7ecAAAAJ&hl=en - dr. kanchana
+https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html - USYD
+
+
+https://veracityai.com/en/
+
+crosspoint paper - https://openaccess.thecvf.com/content/CVPR2022/papers/Afham_CrossPoint_Self-Supervised_Cross-Modal_Contrastive_Learning_for_3D_Point_Cloud_Understanding_CVPR_2022_paper.pdf
+repo - https://github.com/MohamedAfham/CrossPoint
+
+latnav - workshop - https://learn3dg.github.io/#accepted video - https://drive.google.com/file/d/1-NMo44QMzLzYM2Mh7og2P3Xa8MgU8eyE/view
+paper - https://arxiv.org/pdf/2211.09770.pdf
+repo - https://github.com/theamaya/3DLatNav
+
+3D privacy
+paper - https://arxiv.org/pdf/2108.08273.pdf
+
+viewport
+paper - https://dl.acm.org/doi/10.1145/3458306.3461000
+repo - https://github.com/theamaya/Viewport-Aware-Dynamic-360-Video-Segment-Categorization
+https://nossdav.org/2021/
+https://2021.acmmmsys.org/
