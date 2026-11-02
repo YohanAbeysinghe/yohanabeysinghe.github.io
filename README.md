@@ -54,7 +54,9 @@ Dark mode is enabled by default. The sun/moon button at the top right switches b
 
 The user has approved publishing this migration. The source is maintained in the existing repository, and `master` is the production branch. Push future work to a branch and open a pull request to **master**. The pull-request job builds and checks the site without deploying. Pushes to `migration/al-folio` also run a build for migration verification; deployment is restricted to `master`.
 
-In the repository's **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. Keep the `github-pages` environment restricted to `master`. Merge the reviewed pull request to publish. `.github/workflows/pages.yml` builds with the locked gems and uploads only `_site/`; the deployment job has `pages: write` and `id-token: write`. No default GitHub Pages Jekyll build or credentials for third-party services are required. The workflow can also be dispatched on `master`.
+The repository's **Settings → Pages → Build and deployment → Source** is set to **GitHub Actions**. Keep the `github-pages` environment restricted to `master`. Merge a reviewed pull request to publish. `.github/workflows/pages.yml` builds with the locked gems and uploads only `_site/`; the deployment job has `pages: write` and `id-token: write`. No default GitHub Pages Jekyll build or credentials for third-party services are required. The workflow can also be dispatched on `master`.
+
+Check the latest **Build and publish academic site** run in Actions to verify publication. Failed **pages build and deployment** runs from before the source change are historical legacy builds; they do not describe the current deployment.
 
 The user-site configuration is `url: https://yohanabeysinghe.github.io` and `baseurl: ""`. Keep the repository identity and origin unchanged. Leave the separate `YohanAbeysinghe/vega_website` repository and its Pages settings intact.
 
@@ -62,4 +64,4 @@ The user-site configuration is `url: https://yohanabeysinghe.github.io` and `bas
 
 Before publishing, retain the migration branch and switch to `master` only after committing or stashing your work. The original site is in Git at **4a4ee47**; there is no backup inside the published site.
 
-After publication, revert the migration merge commit through a new pull request rather than rewriting history. Restoring the old plain HTML also restores its old workflow state, so restore the previous Pages publishing source recorded in your repository settings or add a static-artifact workflow for that old HTML. Keep the current `.gitignore` user change and the separate VEGA project untouched.
+After publication, revert migration commit `2feca57` through a new pull request rather than rewriting history. Restoring the old plain HTML also restores its old workflow state, so restore the previous Pages publishing source (the `master` branch, root directory) or add a static-artifact workflow for that old HTML. Keep the current `.gitignore` user change and the separate VEGA project untouched.
