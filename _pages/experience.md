@@ -2,7 +2,6 @@
 layout: page
 title: Experience
 permalink: /experience/
-description: Research, teaching, and education.
 nav: true
 nav_order: 2
 ---
