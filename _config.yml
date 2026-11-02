@@ -41,7 +41,7 @@ al_folio:
     auto_apply_safe_fixes: false
 
 navbar_fixed: true
-footer_fixed: false
+footer_fixed: true
 max_width: 820px
 last_updated: false
 back_to_top: false

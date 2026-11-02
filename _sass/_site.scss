@@ -9,8 +9,8 @@ html[data-theme="dark"] {
   --global-hover-color: #9fdfe7;
   --global-divider-color: #3b3c41;
   --global-footer-bg-color: #1d1e20;
-  --global-footer-text-color: #b3b5bb;
-  --global-footer-link-color: #68c6d3;
+  --global-footer-text-color: #90939a;
+  --global-footer-link-color: #90939a;
   --site-notice-bg: #292c30;
 }
 
@@ -23,8 +23,8 @@ html[data-theme="light"] {
   --global-hover-color: #00586a;
   --global-divider-color: #e5e5e7;
   --global-footer-bg-color: #fff;
-  --global-footer-text-color: #62666d;
-  --global-footer-link-color: #006e83;
+  --global-footer-text-color: #70747b;
+  --global-footer-link-color: #70747b;
   --site-notice-bg: #f4f5f6;
 }
 
@@ -162,14 +162,36 @@ html[data-theme="light"] .theme-icon-moon {
     display: none;
   }
 }
-footer {
+footer.fixed-bottom {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 1000;
+  background: var(--global-footer-bg-color);
+  color: var(--global-footer-text-color);
   border-top: 1px solid var(--global-divider-color);
 }
-footer .container {
-  font-size: 0.8rem;
-  line-height: 1.7;
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
+footer.fixed-bottom .container {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-top: 0.45rem;
+  padding-bottom: calc(0.45rem + env(safe-area-inset-bottom, 0px));
+}
+footer.fixed-bottom a {
+  color: var(--global-footer-link-color);
+}
+footer.fixed-bottom a:hover,
+footer.fixed-bottom a:focus-visible {
+  color: var(--global-theme-color);
+}
+// Reserve space for a wrapped footer on small screens and phone safe areas.
+body {
+  padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+}
+@media (max-width: 575px) {
+  body {
+    padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 .about-intro {
