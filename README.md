@@ -68,3 +68,5 @@ Before publishing, retain the migration branch and switch to `master` only after
 After publication, revert migration commit `2feca57` through a new pull request rather than rewriting history. Restoring the old plain HTML also restores its old workflow state, so restore the previous Pages publishing source (the `master` branch, root directory) or add a static-artifact workflow for that old HTML. Keep the current `.gitignore` user change and the separate VEGA project untouched.
 
 The footer is fixed to the bottom edge, with muted theme-aware credits and no copyright sentence. Edit `footer_text` in `_config.yml` for its wording; `_includes/footer.liquid` renders the credits and `_sass/_site.scss` reserves space beneath the content.
+
+The browser tab icon is `assets/img/favicon.svg`, a minimal teal “y” on a white circle. `_config.yml` selects it through `icon: favicon.svg`; the theme automatically versions the asset URL when its contents change.
