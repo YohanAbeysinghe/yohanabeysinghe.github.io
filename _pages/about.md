@@ -23,9 +23,9 @@ I am a second year Ph.D. student in Electrical and Computer Engineering at the [
 
 I study how robots can learn from visual experience to understand and navigate complex environments, with a focus on vision-language-action models and geometry-aware planning. I also work on multimodal video understanding and counterfactual reasoning, exploring whether vision-language models respond to visual changes or rely on memorized information.
 
-Before joining UMD, I was a Research Associate at the Mohamed bin Zayed University of Artificial Intelligence, working with Dr. Salman Khan on air pollution forecasting, with a first-author publication in _npj Clean Air_. I also completed a research internship at the University of Sydney on protein structure prediction. I received my B.Sc. (Hons) in Electronics and Telecommunication Engineering from the University of Moratuwa, Sri Lanka, graduating with First Class Honours.
+Before joining UMD, I was a Research Associate at the [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), working with [Dr. Salman Khan](https://salman-h-khan.github.io/) on air pollution forecasting, with a first-author publication in [_npj Clean Air_](https://www.nature.com/articles/s44407-026-00076-3). I also completed a research internship at the [University of Sydney](https://www.sydney.edu.au/) on protein structure prediction. I received my B.Sc. (Hons) in Electronics and Telecommunication Engineering from the [University of Moratuwa](https://uom.lk/), Sri Lanka, graduating with First Class Honours.
 
-I represented Sri Lanka at the International Mathematical Olympiad, receiving a bronze medal in 2017, and at the International Physics Olympiad. I also received a bronze medal at the Asia Pacific Mathematics Olympiad, a gold medal at the Sri Lankan Physics Olympiad, and the Dean’s Fellowship at UMD.
+I represented Sri Lanka at the [International Mathematical Olympiad](https://www.imo-official.org/results/contestant/25153/), receiving a bronze medal in 2017, and at the International Physics Olympiad. I also received a bronze medal at the [Asia Pacific Mathematics Olympiad](https://www.apmo-official.org/country_report/LKA/2017), a gold medal at the Sri Lankan Physics Olympiad, and the Dean’s Fellowship at UMD.
 
 </div>
 </div>
