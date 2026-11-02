@@ -80,7 +80,3 @@ nav_order: 2
     <span class="experience-date">January 2020–July 2024</span>
   </div>
 </div>
-
-<p id="honors"><a href="{{ '/honors/' | relative_url }}">Competition honors <span aria-hidden="true">→</span></a></p>
-
-Earlier projects and leadership activities are recorded in my [CV]({{ site.data.socials.cv_pdf | relative_url }}).
