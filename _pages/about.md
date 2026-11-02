@@ -19,17 +19,13 @@ latest_posts:
 
 <h2 class="intro-heading">About</h2>
 
-I am a Ph.D. student in Electrical and Computer Engineering at the [University of Maryland](https://ece.umd.edu/), where I work in the [GAMMA Lab](https://gamma.umd.edu/) under the supervision of [Prof. Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha/). My research lies at the intersection of robotics, computer vision, and machine learning. I am interested in how intelligent systems can understand visual environments, reason about changes, and use that understanding to act in the physical world.
+I am a Ph.D. student in Electrical and Computer Engineering at the [University of Maryland](https://ece.umd.edu/), working in the [GAMMA Lab](https://gamma.umd.edu/) under the supervision of [Prof. Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha/). My research lies at the intersection of robotics, computer vision, and machine learning.
 
-My current work focuses on robot navigation, vision-language-action models, and geometry-aware planning. I study how robots can learn navigation policies from visual experience and how geometric information can help guide their behavior in complex environments. I am also interested in world models, differentiable robotics, and the connections between learning, optimization, and control.
+I study how robots can learn from visual experience to understand and navigate complex environments, with a focus on vision-language-action models and geometry-aware planning. I also work on multimodal video understanding and counterfactual reasoning, exploring whether vision-language models respond to visual changes or rely on memorized information.
 
-Alongside robotics, I work on vision-language models and multimodal video understanding. I am particularly interested in counterfactual reasoning and in evaluating whether models respond to changes in visual content or rely on information learned during training. My current work explores these questions through controlled edits to videos and their associated question-answering tasks, with an emphasis on detecting dataset contamination and understanding model behavior.
+Before joining UMD, I was a Research Associate at the Mohamed bin Zayed University of Artificial Intelligence, working with Dr. Salman Khan on air pollution forecasting, with a first-author publication in _npj Clean Air_. I also completed a research internship at the University of Sydney on protein structure prediction. I received my B.Sc. (Hons) in Electronics and Telecommunication Engineering from the University of Moratuwa, Sri Lanka, graduating with First Class Honours.
 
-Before joining UMD, I was a Research Associate at the Mohamed bin Zayed University of Artificial Intelligence, working with Dr. Salman Khan. There, I developed machine learning methods for spatiotemporal air pollution forecasting, resulting in a first-author publication in _npj Clean Air_. My broader research experience includes diffusion-based video generation and EEG-based signal classification. During my research internship at the University of Sydney, I worked on protein structure prediction.
-
-I received my B.Sc. (Hons) in Electronics and Telecommunication Engineering from the University of Moratuwa, Sri Lanka, graduating with First Class Honours. My undergraduate research explored interpretable EEG classification and the development of an ear-EEG acquisition device.
-
-Mathematics has been an important part of my journey. I represented Sri Lanka at the International Mathematical Olympiad, where I received a bronze medal in 2017. I also received a bronze medal at the Asia Pacific Mathematics Olympiad and a gold medal at the Sri Lankan Physics Olympiad, and represented Sri Lanka at the International Physics Olympiad. At UMD, I was awarded the Dean’s Fellowship.
+I represented Sri Lanka at the International Mathematical Olympiad, receiving a bronze medal in 2017, and at the International Physics Olympiad. I also received a bronze medal at the Asia Pacific Mathematics Olympiad, a gold medal at the Sri Lankan Physics Olympiad, and the Dean’s Fellowship at UMD.
 
 </div>
 </div>
