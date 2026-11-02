@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 description: Curriculum vitae
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 <p><a class="cv-download" href="{{ site.data.socials.cv_pdf | relative_url }}">Download CV <span class="file-type">PDF</span> <span aria-hidden="true">↗</span></a></p>

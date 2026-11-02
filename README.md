@@ -37,7 +37,8 @@ Generated files live in ignored `_site/`; dependencies and caches are ignored. N
 - **Publication ordering:** `selected_order` controls the order within each year on Publications. The About page is a short biography and links to the full publication list rather than rendering a second bibliography.
 - **Research figures:** the four papers use local figures in `images/publications/`; see `docs/publication-figures.md` for sources. Set `preview`, `preview_alt`, `preview_width`, and `preview_height` in the BibTeX entry. `abbr` supplies the venue badge. Images retain their original aspect ratios and open at a larger size when clicked.
 - **Experience / education:** `_pages/experience.md`.
-- **Honors:** `_data/honors.yml`, rendered on `_pages/honors.md`. Group entries under Mathematics, Physics, or Programming. Keep medals, honorable mentions, rankings, and participation distinct. The dedicated page is linked in the navigation between Experience and CV.
+- **Honors:** `_data/honors.yml`, rendered on `_pages/honors.md`. Group entries under Mathematics, Physics, or Programming. Repeated competitions are combined into compact bullets; medals, honorable mentions, rankings, and participation remain distinct. Locations stay in the data rather than the rendered list.
+- **Courses:** `_data/courses.yml`, rendered on `_pages/courses.md`, lists PhD coursework, current enrollment, and TA courses with instructors. Do not infer semesters or publish grades.
 - **CV:** the download remains `/data/Yohan_Abeysinghe_CV.pdf`. Replace that file deliberately with the intended public version to retain existing links. `src/` is private, ignored, and explicitly excluded from Jekyll; never copy it into public assets automatically.
 
 Custom styling is additive in `_sass/_site.scss`. `_layouts/bib.liquid` is a compact, intentional view override. The rest of the theme comes from gems. After a gem update, inspect override drift, rebuild, and review before accepting new checksums:

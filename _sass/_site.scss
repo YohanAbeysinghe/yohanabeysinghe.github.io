@@ -155,11 +155,19 @@ html[data-theme="light"] .theme-icon-moon {
     order: 1;
   }
 }
-// Leave room for the five navigation links on narrow tablets. The About link
+// Leave room for the six navigation links on tablets. The About link
 // remains the home link; the page heading supplies the title on these screens.
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 991px) {
   #navbar .navbar-brand {
     display: none;
+  }
+  #navbar .navbar-nav {
+    gap: 0.25rem;
+  }
+  #navbar .nav-link {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    font-size: 0.95rem;
   }
 }
 footer.fixed-bottom {
@@ -435,31 +443,35 @@ body {
   margin-top: 0;
 }
 
-.honors-list {
-  list-style: none;
-  padding: 0;
+.compact-list-page section + section {
+  margin-top: 1.5rem;
+}
+.compact-list-page h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.4rem;
+}
+.honors-list,
+.course-list {
   margin: 0;
+  padding-left: 1.2rem;
+  list-style: disc;
 }
-.honors-list li {
-  display: grid;
-  grid-template-columns: 4.4rem minmax(0, 1fr);
-  gap: 1rem;
-  margin: 1rem 0;
+.honors-list li,
+.course-list li {
+  margin: 0.35rem 0;
+  padding-left: 0.1rem;
   font-size: 0.94rem;
+  line-height: 1.6;
 }
-.honors-section:first-child h2 {
-  margin-top: 0;
+.course-term,
+.course-instructors {
+  color: var(--global-text-color-light);
 }
-.honor-location {
+.course-instructors {
   display: block;
-  margin-top: 0.1rem;
-  color: var(--global-text-color-light);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
 }
-.honor-year {
-  color: var(--global-text-color-light);
-  font-variant-numeric: tabular-nums;
-}
+
 .experience-entry {
   display: grid;
   grid-template-columns: 60px minmax(0, 1fr);
@@ -557,10 +569,6 @@ body {
   }
   .research-visual {
     width: min(100%, 320px);
-  }
-  .honors-list li {
-    grid-template-columns: 3.2rem minmax(0, 1fr);
-    gap: 0.6rem;
   }
   .experience-entry {
     grid-template-columns: 42px minmax(0, 1fr);

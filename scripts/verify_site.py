@@ -13,7 +13,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
-PAGES = ["index.html", "publications/index.html", "experience/index.html", "honors/index.html", "cv/index.html"]
+PAGES = ["index.html", "publications/index.html", "experience/index.html", "honors/index.html", "courses/index.html", "cv/index.html"]
 SELECTED = ["seneviratne2026vega", "abeysinghe2026syncast", "chowdhury2025magnet", "baliah2026vface"]
 HOST = "yohanabeysinghe.github.io"
 
@@ -76,7 +76,7 @@ def verify():
                 if unquote(url.fragment) not in target_page.ids:
                     errors.append(f"{name}: missing fragment {ref}")
             checked += 1
-        for nav_path in ["/", "/publications/", "/experience/", "/honors/", "/cv/"]:
+        for nav_path in ["/", "/publications/", "/experience/", "/honors/", "/courses/", "/cv/"]:
             if f'href="{nav_path}"' not in text:
                 errors.append(f"{name}: missing navigation destination {nav_path}")
         canonical = f'https://{HOST}/' + (name.removesuffix("index.html"))

@@ -1,0 +1,34 @@
+# Coursework reported in the user's supplied background. Older semester dates
+# were not specified. Grades and courses only considered for enrollment are omitted.
+taken:
+  - code: ENEE620
+    title: Random Processes in Communication and Control
+  - code: ENEE627
+    title: Information Theory
+  - code: ENEE630
+    title: Advanced Digital Signal Processing
+  - code: ENEE645
+    title: Compilers and Optimization
+  - code: CMSC764
+    title: Advanced Numerical Optimization
+  - code: ENEE759R / CMSC756
+    title: Robotics
+in_progress:
+  - code: CMSC838B
+    title: Differentiable Programming for Agentic AI and Physical Intelligence
+    semester: Fall 2026
+  - code: CMSC848K
+    title: Multimodal Foundation Models
+    semester: Fall 2026
+# ENEE324 is the recorded TA course. The user supplied the three instructors;
+# individual semester assignments are not inferred.
+teaching:
+  - code: ENEE324
+    title: Engineering Probability
+    instructors:
+      - name: Mark Shayman
+        url: https://ece.umd.edu/clark/faculty/477/Mark-Shayman
+      - name: Jonathan Simon
+        url: https://ece.umd.edu/clark/faculty/481/Jonathan-Simon
+      - name: Prakash Narayan
+        url: https://ece.umd.edu/clark/faculty/445/Prakash-Narayan
