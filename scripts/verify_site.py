@@ -4,7 +4,7 @@
 Uses only the Python standard library. Run after a production build.
 """
 
-from hashlib import sha256
+from hashlib import md5, sha256
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -43,6 +43,8 @@ class Page(HTMLParser):
 def verify():
     errors, checked = [], 0
     parsed = {}
+    cv = Path("data/Yohan_Abeysinghe_CV.pdf")
+    cv_url = f"/{cv.as_posix()}?v={md5((ROOT / cv).read_bytes()).hexdigest()}"
     for name in PAGES:
         path = SITE / name
         if not path.is_file():
@@ -76,9 +78,12 @@ def verify():
                 if unquote(url.fragment) not in target_page.ids:
                     errors.append(f"{name}: missing fragment {ref}")
             checked += 1
-        for nav_path in ["/", "/publications/", "/experience/", "/honors/", "/courses/", "/data/Yohan_Abeysinghe_CV.pdf"]:
+        for nav_path in ["/", "/publications/", "/experience/", "/honors/", "/courses/", cv_url]:
             if f'href="{nav_path}"' not in text:
                 errors.append(f"{name}: missing navigation destination {nav_path}")
+        for ref in page.refs:
+            if urlsplit(ref).path == f"/{cv.as_posix()}" and ref != cv_url:
+                errors.append(f"{name}: CV link is missing the current file version: {ref}")
         canonical = f'https://{HOST}/' + (name.removesuffix("index.html"))
         if f'rel="canonical" href="{canonical}"' not in text:
             errors.append(f"{name}: incorrect canonical URL")
@@ -91,7 +96,6 @@ def verify():
     for forbidden in ["src", "drafts.txt", "docs", "vendor", "Gemfile", "node_modules", "README.md", ".env"]:
         if (SITE / forbidden).exists():
             errors.append(f"Non-public source material in output: {forbidden}")
-    cv = Path("data/Yohan_Abeysinghe_CV.pdf")
     if sha256((ROOT / cv).read_bytes()).digest() != sha256((SITE / cv).read_bytes()).digest():
         errors.append("Public CV was altered while building")
     for project in ["mipnerf", "mipnerf360"]:
