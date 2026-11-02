@@ -451,13 +451,17 @@ body {
   font-size: 1.4rem;
 }
 .honors-list,
-.course-list {
+.coursework-list {
   margin: 0;
   padding-left: 1.2rem;
   list-style: disc;
 }
+// Avoid the core theme's .course-list grid; these are plain bullet lists.
+.coursework-list {
+  display: block;
+}
 .honors-list li,
-.course-list li {
+.coursework-list li {
   margin: 0.35rem 0;
   padding-left: 0.1rem;
   font-size: 0.94rem;
