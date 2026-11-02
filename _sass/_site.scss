@@ -221,6 +221,51 @@ body {
   transform: scale(1.35);
   transform-origin: center top;
 }
+// Keep the desktop homepage within a typical full-height browser window.
+// Narrow screens and browser zoom retain the natural single-column flow.
+@media (min-width: 992px) {
+  body:has(.about-intro) {
+    padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px));
+  }
+  .container[role="main"]:has(.about-intro) {
+    max-width: 960px;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0;
+  }
+  .post:has(.about-intro) .post-header {
+    margin-bottom: 1rem;
+  }
+  .about-intro {
+    line-height: 1.5;
+  }
+  .about-intro p {
+    margin-bottom: 0.75rem;
+  }
+  .intro-heading {
+    margin-bottom: 0.6rem;
+  }
+  .portrait-frame {
+    width: 190px;
+    height: 190px;
+    margin-left: 1.5rem;
+  }
+  .home-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .home-details h2 {
+    margin: 1rem 0 0.5rem;
+  }
+  .home-details p {
+    margin-bottom: 0.5rem;
+  }
+  .home-details .profile-links {
+    margin-top: 0.25rem;
+  }
+}
+
 .profile-links,
 .research-links {
   display: flex;

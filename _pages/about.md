@@ -35,6 +35,8 @@ I represented Sri Lanka at the International Mathematical Olympiad, receiving a 
 <aside class="availability" aria-label="Internship availability">{{ site.data.availability.text }}</aside>
 {% endif %}
 
+<div class="home-details" markdown="1">
+
 <section aria-labelledby="interests" markdown="1">
 <h2 id="interests">Interests</h2>
 
@@ -59,3 +61,5 @@ Robot Learning, Robot Navigation, Computer Vision, Vision-Language Models, Count
   </a>
 </nav>
 </section>
+
+</div>
