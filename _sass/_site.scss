@@ -207,12 +207,21 @@ body {
 .post:has(.about-intro) .post-header {
   margin-bottom: 0.85rem;
 }
-.post:has(.about-intro) h2 {
-  margin-top: 1.1rem;
-  margin-bottom: 0.45rem;
+.intro-copy > p:last-child {
+  margin-bottom: 0;
 }
-.post:has(.about-intro) .intro-heading {
-  margin-top: 0;
+.home-section {
+  margin-top: 0.75rem;
+  padding: 0;
+}
+.post .home-section h2 {
+  margin: 0 0 0.3rem;
+}
+.home-section > p {
+  margin: 0;
+}
+.home-section .profile-links {
+  margin-top: 0.35rem;
 }
 
 .portrait-frame {

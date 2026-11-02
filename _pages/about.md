@@ -35,14 +35,14 @@ I represented Sri Lanka at the International Mathematical Olympiad, receiving a 
 <aside class="availability" aria-label="Internship availability">{{ site.data.availability.text }}</aside>
 {% endif %}
 
-<section aria-labelledby="interests" markdown="1">
+<section class="home-section" aria-labelledby="interests" markdown="1">
 <h2 id="interests">Interests</h2>
 
 Robot Learning, Robot Navigation, Computer Vision, Vision-Language Models, Counterfactual Reasoning, Vision-Language-Action Models, Geometry, Optimization, Control, Mathematics, Chess, Reading
 
 </section>
 
-<section aria-labelledby="contact" markdown="1">
+<section class="home-section" aria-labelledby="contact" markdown="1">
 <h2 id="contact">Contact</h2>
 
 <p><strong>Email:</strong> <a href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a></p>
