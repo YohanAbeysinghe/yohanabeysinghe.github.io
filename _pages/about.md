@@ -19,7 +19,7 @@ latest_posts:
 
 <h2 class="intro-heading">About</h2>
 
-I am a Ph.D. student in Electrical and Computer Engineering at the [University of Maryland](https://ece.umd.edu/), working in the [GAMMA Lab](https://gamma.umd.edu/) under the supervision of [Prof. Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha/). My research lies at the intersection of robotics, computer vision, and machine learning.
+I am a second year Ph.D. student in Electrical and Computer Engineering at the [University of Maryland](https://ece.umd.edu/), working in the [GAMMA Lab](https://gamma.umd.edu/) under the supervision of [Prof. Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha/). My research lies at the intersection of robotics, computer vision, and machine learning.
 
 I study how robots can learn from visual experience to understand and navigate complex environments, with a focus on vision-language-action models and geometry-aware planning. I also work on multimodal video understanding and counterfactual reasoning, exploring whether vision-language models respond to visual changes or rely on memorized information.
 
