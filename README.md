@@ -30,7 +30,7 @@ Generated files live in ignored `_site/`; dependencies and caches are ignored. N
 
 ## Update content
 
-- **Biography:** `_pages/about.md` (two introductory paragraphs). Keep the current-student wording independent of academic year.
+- **Homepage:** `_pages/about.md` contains the biography, Interests, and Contact sections. Keep the current-student wording independent of academic year. The displayed email is derived from `_data/socials.yml` using `_AT_` and `_DOT_` separators.
 - **Internship notice:** edit `_data/availability.yml`; set `enabled: false` to hide it.
 - **Social links:** `_data/socials.yml`. The Scholar ID is preserved from the original public site.
 - **Publications:** add a verified record to `_bibliography/papers.bib`. Include full authors, title, year, official journal or proceedings, and a verified `paper` URL. `venue` is the short display label; `status` distinguishes a published work from a preprint. Use `summary` for a short description and `contribution` only when supported. Avoid placeholders for unreleased code.
