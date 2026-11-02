@@ -12,7 +12,7 @@ nav_order: 4
   <ul class="coursework-list">
     {% for course in site.data.courses.coursework %}
       <li>
-        {% if course.status %}<strong>{% endif %}{{ course.code }} — {{ course.title }} <span class="course-term">({{ course.semester }})</span>{% if course.status %}</strong> <span class="course-status">· {{ course.status }}</span>{% endif %}
+        {{ course.code }} — {{ course.title }} <span class="course-term">({{ course.semester }})</span>{% if course.status %} <span class="course-status">· {{ course.status }}</span>{% endif %}
       </li>
     {% endfor %}
   </ul>
