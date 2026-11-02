@@ -1,0 +1,31 @@
+---
+version: 1
+overrides:
+  _includes/header.liquid:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _includes/header.liquid
+    upstream_sha256: c8663513baded68d9fa5fbe4d6363a976535bbe201efe5138243d0ff03101058
+    local_sha256: 53cb94c5aeed32791a1042e1b7db8efff1a7388b819065194198bf43cd8c881e
+    acknowledged_at: '2026-11-01'
+  _layouts/bib.liquid:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _layouts/bib.liquid
+    upstream_sha256: f3c547969ef76219ca1eb21df09dce5a3daf32a1f491b1586f68e3213fa35f53
+    local_sha256: 0a4026dba4df08a8818e46feea7b8b5a2e199d8a38b38b4ba27e0b45982ac07d
+    acknowledged_at: '2026-11-01'
+  assets/css/main.scss:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: assets/css/main.scss
+    upstream_sha256: 437c6c911c596391413e435dc0ea7095e682e85c572c1fd3fff69f9597455b3e
+    local_sha256: 27869593c0485311b9879b053c3b3d1395aefad850ad71dc71b7c7b8c92894bc
+    acknowledged_at: '2026-11-01'
+  assets/js/theme.js:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: assets/js/theme.js
+    upstream_sha256: a1a07af6a468a10fc06ff3cf71d30b1b38ae8dc81674e8448c978080bbb78b81
+    local_sha256: 2156f766f4a856139ef8554c3c73914c74589a564c62a606d1f613add6499697
+    acknowledged_at: '2026-11-01'

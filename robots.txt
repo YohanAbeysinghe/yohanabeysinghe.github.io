@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yohanabeysinghe.github.io/sitemap.xml

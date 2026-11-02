@@ -1,0 +1,65 @@
+# Yohan Abeysinghe's academic website
+
+An al-folio v1.2 site for **https://yohanabeysinghe.github.io/**. Runtime and navigation come from the pinned `al_folio_core` gem. See [THEME_VERSION.md](THEME_VERSION.md) for provenance and [the migration review](docs/MIGRATION.md) for sources, discrepancies, and verification.
+
+## Run locally
+
+Use Ruby **3.3.13** (`.ruby-version`) and Bundler. On this Mac, Ruby 3.3 was installed with Homebrew; the preview script selects it automatically.
+
+```bash
+# macOS, when Homebrew Ruby is needed:
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+
+# Keep gems outside this checkout: its parent directory contains colons,
+# which Bundler does not support in gem paths.
+bundle config set --local path "$HOME/.cache/yohan-site/bundle"
+bundle install
+bash scripts/preview.sh
+```
+
+Open **http://127.0.0.1:4000/**. Jekyll watches content changes. Restart it after changing `_config.yml` or `_data` if a change is not reflected. Stop with Ctrl-C. The public VEGA project is hosted separately; its absolute links open the existing live project.
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+python3 scripts/verify_site.py
+bundle exec al-folio upgrade audit --no-fail
+bundle exec al-folio upgrade overrides audit
+```
+
+Generated files live in ignored `_site/`; dependencies and caches are ignored. Node is only needed for the optional formatter: `npm ci`, then `npm run lint:prettier`. No npm build or Tailwind compilation is required.
+
+## Update content
+
+- **Biography:** `_pages/about.md` (two introductory paragraphs). Keep the current-student wording independent of academic year.
+- **Internship notice:** edit `_data/availability.yml`; set `enabled: false` to hide it.
+- **Social links:** `_data/socials.yml`. The Scholar ID is preserved from the original public site.
+- **Publications:** add a verified record to `_bibliography/papers.bib`. Include full authors, title, year, official journal or proceedings, and a verified `paper` URL. `venue` is the short display label; `status` distinguishes a published work from a preprint. Use `summary` for a short description and `contribution` only when supported. Avoid placeholders for unreleased code.
+- **Publication ordering:** `selected_order` controls the order within each year on Publications. The About page is a short biography and links to the full publication list rather than rendering a second bibliography.
+- **Research figures:** if a relevant image already exists locally, set `preview = {/images/filename.png}` and `preview_alt = {A meaningful description}` in its BibTeX entry. Keep original aspect ratios. No new research images were sourced for the migration.
+- **Experience / education:** `_pages/experience.md`.
+- **Honors:** `_data/honors.yml`, rendered on `_pages/honors.md`. Group entries under Mathematics, Physics, or Programming. Keep medals, honorable mentions, rankings, and participation distinct. The dedicated page is linked in the navigation between Experience and CV.
+- **CV:** the download remains `/data/Yohan_Abeysinghe_CV.pdf`. Replace that file deliberately with the intended public version to retain existing links. `src/` is private, ignored, and explicitly excluded from Jekyll; never copy it into public assets automatically.
+
+Custom styling is additive in `_sass/_site.scss`. `_layouts/bib.liquid` is a compact, intentional view override. The rest of the theme comes from gems. After a gem update, inspect override drift, rebuild, and review before accepting new checksums:
+
+```bash
+bundle exec al-folio upgrade overrides audit
+bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
+bundle exec al-folio upgrade overrides diff assets/css/main.scss
+```
+
+Dark mode is enabled by default. The sun/moon button at the top right switches between dark and light, including when the mobile menu is closed, and remembers the visitor's choice. `enable_darkmode` in `_config.yml` controls whether the switch is enabled. The two-state preference behavior is a small local override in `assets/js/theme.js`; `_includes/header.liquid` keeps the control outside the collapsed menu and uses inline SVG icons. Both palettes are defined with CSS variables in `_sass/_site.scss`. These overrides are tracked in `.al-folio-overrides.yml` alongside the bibliography and Sass entry point.
+
+## Publishing updates
+
+The user has approved publishing this migration. The source is maintained in the existing repository, and `master` is the production branch. Push future work to a branch and open a pull request to **master**. The pull-request job builds and checks the site without deploying. Pushes to `migration/al-folio` also run a build for migration verification; deployment is restricted to `master`.
+
+In the repository's **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. Keep the `github-pages` environment restricted to `master`. Merge the reviewed pull request to publish. `.github/workflows/pages.yml` builds with the locked gems and uploads only `_site/`; the deployment job has `pages: write` and `id-token: write`. No default GitHub Pages Jekyll build or credentials for third-party services are required. The workflow can also be dispatched on `master`.
+
+The user-site configuration is `url: https://yohanabeysinghe.github.io` and `baseurl: ""`. Keep the repository identity and origin unchanged. Leave the separate `YohanAbeysinghe/vega_website` repository and its Pages settings intact.
+
+## Revert
+
+Before publishing, retain the migration branch and switch to `master` only after committing or stashing your work. The original site is in Git at **4a4ee47**; there is no backup inside the published site.
+
+After publication, revert the migration merge commit through a new pull request rather than rewriting history. Restoring the old plain HTML also restores its old workflow state, so restore the previous Pages publishing source recorded in your repository settings or add a static-artifact workflow for that old HTML. Keep the current `.gitignore` user change and the separate VEGA project untouched.

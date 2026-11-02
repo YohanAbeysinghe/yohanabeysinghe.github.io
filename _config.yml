@@ -1,0 +1,159 @@
+# al-folio v1.2; runtime stays in the pinned al_folio_core gem.
+theme: al_folio_core
+title: blank
+first_name: Yohan
+middle_name: ""
+last_name: Abeysinghe
+lang: en
+icon: 🌐
+url: https://yohanabeysinghe.github.io
+baseurl: ""
+description: >-
+  Yohan Abeysinghe — PhD student at UMD GAMMA Lab. Robot learning,
+  geometry-aware navigation, vision-language-action models, and multimodal learning.
+keywords: robotics, robot learning, multimodal learning, Yohan Abeysinghe
+footer_text: >-
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  features:
+    cv:
+      enabled: false
+    distill:
+      enabled: false
+  compat:
+    bootstrap:
+      enabled: false
+  upgrade:
+    channel: stable
+    auto_apply_safe_fixes: false
+
+navbar_fixed: true
+footer_fixed: false
+max_width: 820px
+last_updated: false
+back_to_top: false
+search_enabled: false
+bib_search: false
+enable_darkmode: true
+enable_masonry: false
+enable_math: false
+enable_medium_zoom: false
+enable_progressbar: false
+enable_navbar_social: false
+enable_video_embedding: false
+enable_publication_thumbnails: false
+enable_cookie_consent: false
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+newsletter:
+  enabled: false
+analytics: {}
+external_sources: []
+external_links:
+  enabled: false
+imagemagick:
+  enabled: false
+serve_og_meta: true
+serve_schema_org: false
+
+plugins:
+  - jekyll-cache-bust
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - al_folio_core
+  - al_folio_upgrade
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+include: ["_pages"]
+exclude:
+  - AGENTS.md
+  - README.md
+  - LICENSE
+  - THEME_VERSION.md
+  - docs/
+  - scripts/
+  - src/
+  - drafts.txt
+  - local/
+  - local-reports/
+  - vendor/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - al-folio-upgrade-report.md
+defaults:
+  - scope:
+      path: assets
+    values:
+      sitemap: false
+  - scope:
+      path: images
+    values:
+      sitemap: false
+  - scope:
+      path: data
+    values:
+      sitemap: false
+
+scholar:
+  last_name: [Abeysinghe]
+  first_name: [Yohan, Y.]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  bibtex_filters: [latex, smallcaps, superscript]
+  replace_strings: true
+  join_strings: true
+  query: "@*"
+  group_by: year
+  group_order: descending
+  sort_by: selected_order
+  order: ascending
+filtered_bibtex_keywords:
+  - arxiv
+  - selected
+  - selected_order
+  - summary
+  - contribution
+  - venue
+  - status
+  - preview
+  - preview_alt
+  - source
+  - paper
+  - website
+  - code
+  - video
+
+third_party_libraries:
+  download: false
+  google_fonts:
+    url:
+      fonts: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap
