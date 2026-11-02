@@ -12,8 +12,6 @@ html[data-theme="dark"] {
   --global-footer-text-color: #90939a;
   --global-footer-link-color: #90939a;
   --site-notice-bg: #292c30;
-  --pub-accent: #8ab9ff;
-  --pub-badge-bg: #315786;
 }
 
 html[data-theme="light"] {
@@ -28,8 +26,6 @@ html[data-theme="light"] {
   --global-footer-text-color: #70747b;
   --global-footer-link-color: #70747b;
   --site-notice-bg: #f4f5f6;
-  --pub-accent: #245ba8;
-  --pub-badge-bg: #245ba8;
 }
 
 body {
@@ -326,7 +322,7 @@ body {
   color: var(--global-text-color);
 }
 .research-title a:hover {
-  color: var(--pub-accent);
+  color: var(--global-theme-color);
   text-decoration: underline;
 }
 .research-authors {
@@ -372,7 +368,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.15rem 0;
-  color: var(--pub-accent);
+  color: var(--global-theme-color);
   text-decoration: none;
 }
 .research-links a + a::before {
@@ -383,7 +379,7 @@ body {
 }
 .research-links a:hover,
 .research-links a:focus-visible {
-  color: var(--pub-accent);
+  color: var(--global-theme-color);
   text-decoration: underline;
 }
 
@@ -397,8 +393,8 @@ body {
   display: inline-block;
   padding: 0.2rem 0.45rem;
   margin-bottom: 0.5rem;
-  color: #fff;
-  background: var(--pub-badge-bg);
+  color: var(--global-bg-color);
+  background: var(--global-theme-color);
   border-radius: 3px;
   font-size: 0.65rem;
   font-weight: 500;
@@ -418,7 +414,7 @@ body {
   cursor: zoom-in;
 }
 .research-figure:hover {
-  border-color: var(--pub-accent);
+  border-color: var(--global-theme-color);
 }
 .research-preview {
   display: block;
