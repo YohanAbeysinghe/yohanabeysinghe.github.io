@@ -69,4 +69,4 @@ After publication, revert migration commit `2feca57` through a new pull request 
 
 The footer is fixed to the bottom edge, with muted theme-aware credits and no copyright sentence. Edit `footer_text` in `_config.yml` for its wording; `_includes/footer.liquid` renders the credits and `_sass/_site.scss` reserves space beneath the content.
 
-The browser tab icon is `assets/img/favicon.svg`, a minimal teal “y” on a white circle. `_config.yml` selects it through `icon: favicon.svg`; the theme automatically versions the asset URL when its contents change.
+The browser tab icon is `assets/img/favicon.svg`, a minimal teal “YA” monogram on a white rounded square. The initials use vector paths in the site's light-mode accent color (`#006e83`). `_config.yml` selects it through `icon: favicon.svg`; the theme automatically versions the asset URL when its contents change.
