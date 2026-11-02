@@ -1,16 +1,30 @@
 ---
 ---
 {% comment %}Small site override of al_folio_core's bibliography view. All metadata lives in papers.bib.{% endcomment %}
-<article id="{{ entry.key }}" class="research-entry{% if entry.preview %} has-preview{% endif %}">
+<article id="{{ entry.key }}" class="research-entry{% if entry.preview %} has-preview{% endif %}" data-venue="{{ entry.abbr | escape }}">
   {% if entry.preview %}
-    <img
-      class="research-preview"
-      src="{{ entry.preview | relative_url }}"
-      alt="{{ entry.preview_alt | escape }}"
-      loading="lazy"
-      width="180"
-      height="120"
-    >
+    <div class="research-visual">
+      <span class="venue-badge">
+        {{- entry.abbr }}
+        {{ entry.year -}}
+      </span>
+      <a
+        class="research-figure"
+        href="{{ entry.preview | relative_url }}"
+        aria-label="Enlarge figure for {{ entry.title | escape }}"
+        title="Enlarge figure"
+      >
+        <img
+          class="research-preview"
+          src="{{ entry.preview | relative_url }}"
+          alt="{{ entry.preview_alt | escape }}"
+          loading="lazy"
+          decoding="async"
+          width="{{ entry.preview_width }}"
+          height="{{ entry.preview_height }}"
+        >
+      </a>
+    </div>
   {% endif %}
   <div class="research-copy">
     <h3 class="research-title">
@@ -42,19 +56,19 @@
     {% endif %}
     <nav class="research-links" aria-label="Links for {{ entry.title | escape }}">
       {% if entry.paper -%}
-        <a href="{{ entry.paper }}">Paper</a>
+        <a class="paper-link" href="{{ entry.paper }}">Paper</a>
       {%- endif %}
       {% if entry.arxiv -%}
-        <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
+        <a class="paper-link" href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
       {%- endif %}
       {% if entry.website -%}
-        <a href="{{ entry.website }}">Project</a>
+        <a class="project-link" href="{{ entry.website }}">Project</a>
       {%- endif %}
       {% if entry.code -%}
-        <a href="{{ entry.code }}">Code</a>
+        <a class="code-link" href="{{ entry.code }}">Code</a>
       {%- endif %}
       {% if entry.video -%}
-        <a href="{{ entry.video }}">Video</a>
+        <a class="video-link" href="{{ entry.video }}">Video</a>
       {%- endif %}
     </nav>
   </div>
