@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <title>Yohan Abeysinghe</title>
-  <circle cx="32" cy="32" r="31" fill="#fff" stroke="#e5e5e7"/>
-  <path d="m19 18 11 22m13-22L29 48q-3 6-9 3" fill="none" stroke="#006e83" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="64" height="64" rx="12" fill="#fff"/>
+  <path d="m10 16 10 17 10-17M20 33v15m13 0 10-32 11 32M37 37h13" fill="none" stroke="#006e83" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
