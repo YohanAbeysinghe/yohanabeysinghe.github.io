@@ -86,3 +86,7 @@ On November 1, 2026, the user selected `src/CV.pdf` as the website CV. Its three
 ## Publication authorization
 
 On November 1, 2026, the user approved pushing the reviewed site to GitHub and publishing it at the existing user-site domain. The migration branch passed its GitHub build before `master` was fast-forwarded to commit `2feca57` and deployed. All five live pages, the selected CV checksum, the dark-mode script, VEGA, and both legacy project paths were verified over HTTPS. Only the reviewed source, dependency lockfiles, and selected public CV were committed; private `src/` files, local caches, dependencies, and generated output remain excluded from Git. The origin repository, existing history, and the separate VEGA repository are preserved.
+
+## Current CV revision
+
+The user subsequently selected `src/Yohan_s_Resume___V6.pdf` as the newest public CV. It replaces `data/Yohan_Abeysinghe_CV.pdf` byte-for-byte at the same download URL. The PDF has 2 pages; SHA-256: `37a7659370a653c70f789d704cb7b854cdbcf7e2d6cede3e784a100b34c01c66`. The source stays in ignored `src/`; no other private documents or website content were imported.
