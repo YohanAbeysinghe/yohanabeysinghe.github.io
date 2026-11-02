@@ -1,34 +1,36 @@
-# Coursework reported in the user's supplied background. Older semester dates
-# were not specified. Grades and courses only considered for enrollment are omitted.
-taken:
-  - code: ENEE620
-    title: Random Processes in Communication and Control
-  - code: ENEE627
-    title: Information Theory
-  - code: ENEE630
-    title: Advanced Digital Signal Processing
-  - code: ENEE645
-    title: Compilers and Optimization
-  - code: CMSC764
-    title: Advanced Numerical Optimization
-  - code: ENEE759R / CMSC756
-    title: Robotics
-in_progress:
+# Course semesters and TA assignments supplied directly by the user.
+# Grades are intentionally omitted; current Fall 2026 coursework is in progress.
+coursework:
   - code: CMSC838B
     title: Differentiable Programming for Agentic AI and Physical Intelligence
     semester: Fall 2026
+    status: In progress
   - code: CMSC848K
     title: Multimodal Foundation Models
     semester: Fall 2026
-# ENEE324 is the recorded TA course. The user supplied the three instructors;
-# individual semester assignments are not inferred.
+    status: In progress
+  - code: ENEE627
+    title: Information Theory
+    semester: Spring 2026
+  - code: ENEE620
+    title: Random Processes in Communication and Control
+    semester: Fall 2025
+  - code: ENEE630
+    title: Advanced Digital Signal Processing
+    semester: Fall 2025
 teaching:
   - code: ENEE324
     title: Engineering Probability
-    instructors:
-      - name: Mark Shayman
-        url: https://ece.umd.edu/clark/faculty/477/Mark-Shayman
-      - name: Jonathan Simon
-        url: https://ece.umd.edu/clark/faculty/481/Jonathan-Simon
-      - name: Prakash Narayan
-        url: https://ece.umd.edu/clark/faculty/445/Prakash-Narayan
+    semester: Fall 2026
+    instructor: Prakash Narayan
+    instructor_url: https://ece.umd.edu/clark/faculty/445/Prakash-Narayan
+  - code: ENEE324
+    title: Engineering Probability
+    semester: Spring 2026
+    instructor: Jonathan Simon
+    instructor_url: https://ece.umd.edu/clark/faculty/481/Jonathan-Simon
+  - code: ENEE324
+    title: Engineering Probability
+    semester: Fall 2025
+    instructor: Mark Shayman
+    instructor_url: https://ece.umd.edu/clark/faculty/477/Mark-Shayman

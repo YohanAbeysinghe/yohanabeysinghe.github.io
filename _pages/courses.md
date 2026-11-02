@@ -10,17 +10,10 @@ nav_order: 4
 <section aria-labelledby="courses-taken">
   <h2 id="courses-taken">Courses taken</h2>
   <ul class="course-list">
-    {% for course in site.data.courses.taken %}
-      <li><strong>{{ course.code }}</strong> — {{ course.title }}</li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section aria-labelledby="in-progress">
-  <h2 id="in-progress">In progress</h2>
-  <ul class="course-list">
-    {% for course in site.data.courses.in_progress %}
-      <li><strong>{{ course.code }}</strong> — {{ course.title }} <span class="course-term">({{ course.semester }})</span></li>
+    {% for course in site.data.courses.coursework %}
+      <li>
+        {% if course.status %}<strong>{% endif %}{{ course.code }} — {{ course.title }} <span class="course-term">({{ course.semester }})</span>{% if course.status %}</strong> <span class="course-status">· {{ course.status }}</span>{% endif %}
+      </li>
     {% endfor %}
   </ul>
 </section>
@@ -30,8 +23,7 @@ nav_order: 4
   <ul class="course-list">
     {% for course in site.data.courses.teaching %}
       <li>
-        <strong>{{ course.code }}</strong> — {{ course.title }}
-        <span class="course-instructors">With {% for instructor in course.instructors %}<a href="{{ instructor.url }}">Prof. {{ instructor.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}.</span>
+        <strong>{{ course.semester }}</strong> — {{ course.code }}: {{ course.title }}, with <a href="{{ course.instructor_url }}">Prof. {{ course.instructor }}</a>.
       </li>
     {% endfor %}
   </ul>
