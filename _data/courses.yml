@@ -3,20 +3,25 @@
 coursework:
   - code: CMSC838B
     title: Differentiable Programming for Agentic AI and Physical Intelligence
+    course_url: https://www.cs.umd.edu/class/fall2026/cmsc838B/
     semester: Fall 2026
     status: In progress
   - code: CMSC848K
     title: Multimodal Foundation Models
+    course_url: https://jbhuang0604.github.io/teaching/CMSC848K/
     semester: Fall 2026
     status: In progress
   - code: ENEE627
     title: Information Theory
+    course_url: https://ece.umd.edu/course-schedule/course/ENEE627
     semester: Spring 2026
   - code: ENEE620
     title: Random Processes in Communication and Control
+    course_url: https://ece.umd.edu/course-schedule/course/ENEE620
     semester: Fall 2025
   - code: ENEE630
     title: Advanced Digital Signal Processing
+    course_url: https://ece.umd.edu/course-schedule/course/ENEE630
     semester: Fall 2025
 teaching:
   - code: ENEE324
