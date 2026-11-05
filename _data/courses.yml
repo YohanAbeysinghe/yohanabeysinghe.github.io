@@ -16,14 +16,17 @@ coursework:
     title: Information Theory
     course_url: https://ece.umd.edu/course-schedule/course/ENEE627
     semester: Spring 2026
+    notes_url: /assets/pdf/enee627-notes.pdf
   - code: ENEE620
     title: Random Processes in Communication and Control
     course_url: https://ece.umd.edu/course-schedule/course/ENEE620
     semester: Fall 2025
+    notes_url: /assets/pdf/enee620-notes.pdf
   - code: ENEE630
     title: Advanced Digital Signal Processing
     course_url: https://ece.umd.edu/course-schedule/course/ENEE630
     semester: Fall 2025
+    notes_url: /assets/pdf/enee630-notes.pdf
 teaching:
   - code: ENEE324
     title: Engineering Probability
