@@ -1,5 +1,6 @@
 # Course semesters and TA assignments supplied directly by the user.
 # Grades are intentionally omitted; current Fall 2026 coursework is in progress.
+# Optional per-course notes_url adds a small notes link; omit it to show no link.
 coursework:
   - code: CMSC838B
     title: Differentiable Programming for Agentic AI and Physical Intelligence
