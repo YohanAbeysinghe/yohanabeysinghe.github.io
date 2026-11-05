@@ -17,6 +17,10 @@ coursework:
     course_url: https://ece.umd.edu/course-schedule/course/ENEE627
     semester: Spring 2026
     notes_url: /assets/pdf/enee627-notes.pdf
+  - code: ENEE645
+    title: Compilers and Optimization
+    course_url: https://ece.umd.edu/course-schedule/course/ENEE645
+    semester: Spring 2026
   - code: ENEE620
     title: Random Processes in Communication and Control
     course_url: https://ece.umd.edu/course-schedule/course/ENEE620
