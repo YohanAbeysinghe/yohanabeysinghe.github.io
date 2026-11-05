@@ -472,6 +472,17 @@ body {
 .course-status {
   color: var(--global-text-color-light);
 }
+.coursework-list .course-notes {
+  margin-left: 0.45em;
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-theme-color);
+  }
+}
 
 .experience-entry {
   display: grid;
