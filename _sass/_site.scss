@@ -473,14 +473,15 @@ body {
   color: var(--global-text-color-light);
 }
 .coursework-list .course-notes {
-  margin-left: 0.45em;
-  color: var(--global-text-color-light);
-  font-size: 0.85em;
-  text-decoration: underline;
+  margin-left: 0.35em;
+  color: var(--global-footer-text-color);
+  font-size: 0.8em;
+  text-decoration: none;
 
   &:hover,
   &:focus-visible {
-    color: var(--global-theme-color);
+    color: var(--global-text-color-light);
+    text-decoration: none;
   }
 }
 
